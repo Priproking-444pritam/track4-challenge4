@@ -1,3 +1,14 @@
-temp_audio/
+# Environment
 .env
+venv/
+.venv/
+
+# Python
 __pycache__/
+*.pyc
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
