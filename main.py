@@ -153,6 +153,17 @@ h1, h2, h3, .display-font { font-family: 'Space Grotesk', sans-serif; }
 }
 
 footer, #MainMenu { visibility: hidden; }
+
+/* ---- Fix: input/textarea boxes are white regardless of dark theme,
+   so force dark, readable text inside them instead of inheriting the
+   pale --text color meant for the dark background. ---- */
+.stTextInput input, .stTextArea textarea, .stSelectbox div[data-baseweb="select"] {
+    color: #1A1D1A !important;
+}
+.stTextInput input::placeholder, .stTextArea textarea::placeholder {
+    color: #6B6F6C !important;
+}
+
 </style>
 
 <div class="bg-blobs"><i></i><i></i><i></i></div>
